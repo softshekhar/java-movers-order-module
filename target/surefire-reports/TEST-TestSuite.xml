@@ -1,0 +1,693 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="2" failures="1" name="TestSuite" time="1.556" errors="0" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home/jre/lib"/>
+    <property name="java.vm.version" value="25.121-b15"/>
+    <property name="user.country.format" value="NO"/>
+    <property name="gopherProxySet" value="false"/>
+    <property name="java.vm.vendor" value="Azul Systems, Inc."/>
+    <property name="maven.multiModuleProjectDirectory" value="/Users/jeeveshmishra/Development/Java/java-movers-order-module"/>
+    <property name="java.vendor.url" value="http://www.azulsystems.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/Users/jeeveshmishra/Development/Java/java-movers-order-module"/>
+    <property name="java.runtime.version" value="1.8.0_121-b15"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home/jre/lib/endorsed"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.io.tmpdir" value="/var/folders/5x/x2_dztkj2dsfhc241xvvd59r0000gn/T/"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="classworlds.conf" value="/Users/jeeveshmishra/apache-maven-3.3.9/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/jeeveshmishra/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.12.4"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="user.home" value="/Users/jeeveshmishra"/>
+    <property name="user.timezone" value="Europe/Oslo"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="jeeveshmishra"/>
+    <property name="java.class.path" value="/Users/jeeveshmishra/apache-maven-3.3.9/boot/plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean install"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_121"/>
+    <property name="java.ext.dirs" value="/Users/jeeveshmishra/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
+    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home/jre/classes"/>
+    <property name="java.vendor" value="Azul Systems, Inc."/>
+    <property name="maven.home" value="/Users/jeeveshmishra/apache-maven-3.3.9"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://www.azulsystems.com/support/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase classname="com.packers.movers.datalayer.entities.EntitySqlStoreTest" name="(com.packers.movers.datalayer.entities.EntitySqlStoreTest)" time="0.274"/>
+  <testcase classname="com.packers.movers.service.resource.OrderResourceTest" name="test_Order_Resource" time="1.282">
+    <failure message="1 expectation failed.
+Expected status code &lt;200&gt; doesn&apos;t match actual status code &lt;500&gt;.
+" type="java.lang.AssertionError">java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;200&gt; doesn&apos;t match actual status code &lt;500&gt;.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:77)
+	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:71)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:81)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:232)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:244)
+	at com.jayway.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:576)
+	at com.jayway.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:110)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:122)
+	at com.jayway.restassured.internal.RequestSpecificationImpl.invokeFilterChain(RequestSpecificationImpl.groovy:979)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:90)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:324)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1207)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1016)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:807)
+	at com.jayway.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:55)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:49)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:151)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:179)
+	at com.jayway.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1436)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:90)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:324)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1207)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1016)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:807)
+	at com.jayway.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:55)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:49)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:151)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:179)
+	at com.jayway.restassured.internal.RequestSpecificationImpl.post(RequestSpecificationImpl.groovy:154)
+	at com.jayway.restassured.internal.RequestSpecificationImpl.post(RequestSpecificationImpl.groovy)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:90)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:324)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1207)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1016)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:807)
+	at com.jayway.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:110)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:130)
+	at com.jayway.restassured.internal.ResponseSpecificationImpl.post(ResponseSpecificationImpl.groovy:269)
+	at com.jayway.restassured.internal.ResponseSpecificationImpl.post(ResponseSpecificationImpl.groovy)
+	at com.packers.movers.service.resource.OrderResourceTest.test_Order_Resource(OrderResourceTest.java:26)
+</failure>
+    <system-out>00:11:22.291 [main] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - After test method: context [DefaultTestContext@44c5a16f testClass = EntitySqlStoreTest, testInstance = com.packers.movers.datalayer.entities.EntitySqlStoreTest@45afc369, testMethod = testPersistCustomer@EntitySqlStoreTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@417d6615 testClass = EntitySqlStoreTest, locations = &apos;{classpath:test-context.xml}&apos;, classes = &apos;{}&apos;, contextInitializerClasses = &apos;[]&apos;, activeProfiles = &apos;{}&apos;, propertySourceLocations = &apos;{}&apos;, propertySourceProperties = &apos;{}&apos;, contextLoader = &apos;org.springframework.test.context.support.DelegatingSmartContextLoader&apos;, parent = [null]]], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null].
+00:11:22.292 [main] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - After test class: context [DefaultTestContext@44c5a16f testClass = EntitySqlStoreTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@417d6615 testClass = EntitySqlStoreTest, locations = &apos;{classpath:test-context.xml}&apos;, classes = &apos;{}&apos;, contextInitializerClasses = &apos;[]&apos;, activeProfiles = &apos;{}&apos;, propertySourceLocations = &apos;{}&apos;, propertySourceProperties = &apos;{}&apos;, contextLoader = &apos;org.springframework.test.context.support.DelegatingSmartContextLoader&apos;, parent = [null]]], class annotated with @DirtiesContext [false] with mode [null].
+Request method:	POST
+Request path:	http://localhost:8086/movers-order-module/createOrder/
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=ISO-8859-1
+Cookies:		&lt;none&gt;
+Body:
+{
+    &quot;name&quot;: &quot;John Trivolta&quot;,
+    &quot;phone&quot;: &quot;004723568978&quot;,
+    &quot;email&quot;: &quot;jt@mailenator.com&quot;,
+    &quot;from_address&quot;: {
+        &quot;street_name&quot;: &quot;veitvetveien 2A&quot;,
+        &quot;postcode&quot;: &quot;0256&quot;,
+        &quot;city&quot;: &quot;Oslo&quot;,
+        &quot;country&quot;: &quot;Norway&quot;
+    },
+    &quot;to_address&quot;: {
+        &quot;street_name&quot;: &quot;veitvetveien 2B&quot;,
+        &quot;postcode&quot;: &quot;0256&quot;,
+        &quot;city&quot;: &quot;Oslo&quot;,
+        &quot;country&quot;: &quot;Norway&quot;
+    },
+    &quot;services&quot;: [
+        {
+            &quot;type&quot;: &quot;packing&quot;,
+            &quot;packets_quantity&quot;: 100,
+            &quot;start_date&quot;: &quot;2017-05-08T07:10:45.059Z&quot;,
+            &quot;cost_per_packet&quot;: 10
+        },
+        {
+            &quot;type&quot;: &quot;moving&quot;,
+            &quot;packets_quantity&quot;: 100,
+            &quot;start_date&quot;: &quot;2017-05-08T07:10:45.059Z&quot;,
+            &quot;cost_per_packet&quot;: 10
+        },
+        {
+            &quot;type&quot;: &quot;cleaning&quot;,
+            &quot;cost&quot;: 100,
+            &quot;packets_quantity&quot;: 100,
+            &quot;start_date&quot;: &quot;2017-05-08T07:10:45.059Z&quot;,
+            &quot;cost_per_packet&quot;: 10
+        }
+    ]
+}
+00:11:22.815 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Get connection for route {}-&gt;http://localhost:8086
+00:11:22.823 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator - Connecting to localhost:8086
+00:11:22.828 [qtp1132967838-13-acceptor-0@2fb68ec6-ServerConnector@4f83df68{HTTP/1.1,[http/1.1]}{0.0.0.0:8086}] DEBUG org.eclipse.jetty.io.ManagedSelector - Queued change org.eclipse.jetty.io.ManagedSelector$Accept@10410af1 on org.eclipse.jetty.io.ManagedSelector@3d829787 id=0 keys=0 selected=0
+00:11:22.829 [qtp1132967838-19] DEBUG org.eclipse.jetty.io.ManagedSelector - Selector loop woken up from select, 0/0 selected
+00:11:22.829 [qtp1132967838-19] DEBUG org.eclipse.jetty.io.ManagedSelector - Running change org.eclipse.jetty.io.ManagedSelector$Accept@10410af1
+00:11:22.830 [qtp1132967838-19] DEBUG org.eclipse.jetty.io.ManagedSelector - Queued change org.eclipse.jetty.io.ManagedSelector$CreateEndPoint@5532c656 on org.eclipse.jetty.io.ManagedSelector@3d829787 id=0 keys=1 selected=0
+00:11:22.830 [qtp1132967838-19] DEBUG org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume - EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@7ae7d20e produced org.eclipse.jetty.io.ManagedSelector$CreateEndPoint@5532c656
+00:11:22.830 [qtp1132967838-19] DEBUG org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume - EPR Pend/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@7ae7d20e dispatch
+00:11:22.830 [qtp1132967838-19] DEBUG org.eclipse.jetty.util.thread.QueuedThreadPool - queue EPR Pend/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@7ae7d20e
+00:11:22.830 [qtp1132967838-19] DEBUG org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume - EPR Pend/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@7ae7d20e run org.eclipse.jetty.io.ManagedSelector$CreateEndPoint@5532c656
+00:11:22.830 [qtp1132967838-15] DEBUG org.eclipse.jetty.util.thread.QueuedThreadPool - run EPR Pend/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@7ae7d20e
+00:11:22.830 [qtp1132967838-15] DEBUG org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume - EPR Pend/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@7ae7d20e run
+00:11:22.830 [qtp1132967838-15] DEBUG org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume - EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@7ae7d20e produce enter
+00:11:22.830 [qtp1132967838-15] DEBUG org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume - EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@7ae7d20e producing
+00:11:22.831 [qtp1132967838-15] DEBUG org.eclipse.jetty.io.ManagedSelector - Selector loop waiting on select
+00:11:22.837 [qtp1132967838-19] DEBUG org.eclipse.jetty.io.AbstractEndPoint - onOpen SelectChannelEndPoint@4e556b12{/127.0.0.1:54522&lt;-&gt;8086,Open,in,out,-,-,3/30000,null}{io=0/0,kio=0,kro=0}
+00:11:22.837 [qtp1132967838-19] DEBUG org.eclipse.jetty.io.IdleTimeout - SelectChannelEndPoint@4e556b12{/127.0.0.1:54522&lt;-&gt;8086,Open,in,out,-,-,3/30000,null}{io=0/0,kio=0,kro=0} idle timeout check, elapsed: 3 ms, remaining: 29997 ms
+00:11:22.839 [main] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: ignoreCookies
+00:11:22.843 [main] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+00:11:22.843 [main] DEBUG org.apache.http.client.protocol.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+00:11:22.844 [main] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+00:11:22.844 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+00:11:22.845 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Sending request: POST /movers-order-module/createOrder/ HTTP/1.1
+00:11:22.845 [main] DEBUG org.apache.http.wire -  &gt;&gt; &quot;POST /movers-order-module/createOrder/ HTTP/1.1[\r][\n]&quot;
+00:11:22.847 [main] DEBUG org.apache.http.wire -  &gt;&gt; &quot;Accept: */*[\r][\n]&quot;
+00:11:22.847 [main] DEBUG org.apache.http.wire -  &gt;&gt; &quot;Content-Type: application/json; charset=ISO-8859-1[\r][\n]&quot;
+00:11:22.847 [main] DEBUG org.apache.http.wire -  &gt;&gt; &quot;Content-Length: 822[\r][\n]&quot;
+00:11:22.847 [main] DEBUG org.apache.http.wire -  &gt;&gt; &quot;Host: localhost:8086[\r][\n]&quot;
+00:11:22.847 [main] DEBUG org.apache.http.wire -  &gt;&gt; &quot;Connection: Keep-Alive[\r][\n]&quot;
+00:11:22.847 [main] DEBUG org.apache.http.wire -  &gt;&gt; &quot;User-Agent: Apache-HttpClient/4.3.6 (java 1.5)[\r][\n]&quot;
+00:11:22.847 [main] DEBUG org.apache.http.wire -  &gt;&gt; &quot;Accept-Encoding: gzip,deflate[\r][\n]&quot;
+00:11:22.847 [main] DEBUG org.apache.http.wire -  &gt;&gt; &quot;[\r][\n]&quot;
+00:11:22.847 [main] DEBUG org.apache.http.headers - &gt;&gt; POST /movers-order-module/createOrder/ HTTP/1.1
+00:11:22.847 [main] DEBUG org.apache.http.headers - &gt;&gt; Accept: */*
+00:11:22.847 [main] DEBUG org.apache.http.headers - &gt;&gt; Content-Type: application/json; charset=ISO-8859-1
+00:11:22.847 [main] DEBUG org.apache.http.headers - &gt;&gt; Content-Length: 822
+00:11:22.847 [main] DEBUG org.apache.http.headers - &gt;&gt; Host: localhost:8086
+00:11:22.847 [main] DEBUG org.apache.http.headers - &gt;&gt; Connection: Keep-Alive
+00:11:22.847 [main] DEBUG org.apache.http.headers - &gt;&gt; User-Agent: Apache-HttpClient/4.3.6 (java 1.5)
+00:11:22.847 [main] DEBUG org.apache.http.headers - &gt;&gt; Accept-Encoding: gzip,deflate
+00:11:22.848 [main] DEBUG org.apache.http.wire -  &gt;&gt; &quot;{[\n]&quot;
+00:11:22.848 [main] DEBUG org.apache.http.wire -  &gt;&gt; &quot;  &quot;name&quot;: &quot;John Trivolta&quot;,[\n]&quot;
+00:11:22.848 [main] DEBUG org.apache.http.wire -  &gt;&gt; &quot;  &quot;phone&quot;: &quot;004723568978&quot;,[\n]&quot;
+00:11:22.848 [main] DEBUG org.apache.http.wire -  &gt;&gt; &quot;  &quot;email&quot;: &quot;jt@mailenator.com&quot;,[\n]&quot;
+00:11:22.848 [main] DEBUG org.apache.http.wire -  &gt;&gt; &quot;  &quot;from_address&quot;: {[\n]&quot;
+00:11:22.848 [main] DEBUG org.apache.http.wire -  &gt;&gt; &quot;    &quot;street_name&quot;: &quot;veitvetveien 2A&quot;,[\n]&quot;
+00:11:22.848 [main] DEBUG org.apache.http.wire -  &gt;&gt; &quot;    &quot;postcode&quot;: &quot;0256&quot;,[\n]&quot;
+00:11:22.848 [main] DEBUG org.apache.http.wire -  &gt;&gt; &quot;    &quot;city&quot;: &quot;Oslo&quot;,[\n]&quot;
+00:11:22.848 [main] DEBUG org.apache.http.wire -  &gt;&gt; &quot;    &quot;country&quot;: &quot;Norway&quot;[\n]&quot;
+00:11:22.848 [main] DEBUG org.apache.http.wire -  &gt;&gt; &quot;  },[\n]&quot;
+00:11:22.848 [main] DEBUG org.apache.http.wire -  &gt;&gt; &quot;  &quot;to_address&quot;: {[\n]&quot;
+00:11:22.848 [main] DEBUG org.apache.http.wire -  &gt;&gt; &quot;    &quot;street_name&quot;: &quot;veitvetveien 2B&quot;,[\n]&quot;
+00:11:22.848 [main] DEBUG org.apache.http.wire -  &gt;&gt; &quot;    &quot;postcode&quot;: &quot;0256&quot;,[\n]&quot;
+00:11:22.848 [main] DEBUG org.apache.http.wire -  &gt;&gt; &quot;    &quot;city&quot;: &quot;Oslo&quot;,[\n]&quot;
+00:11:22.848 [main] DEBUG org.apache.http.wire -  &gt;&gt; &quot;    &quot;country&quot;: &quot;Norway&quot;[\n]&quot;
+00:11:22.848 [main] DEBUG org.apache.http.wire -  &gt;&gt; &quot;  },[\n]&quot;
+00:11:22.848 [main] DEBUG org.apache.http.wire -  &gt;&gt; &quot;  &quot;services&quot;: [[\n]&quot;
+00:11:22.848 [main] DEBUG org.apache.http.wire -  &gt;&gt; &quot;    {[\n]&quot;
+00:11:22.848 [main] DEBUG org.apache.http.wire -  &gt;&gt; &quot;      &quot;type&quot;: &quot;packing&quot;,[\n]&quot;
+00:11:22.848 [main] DEBUG org.apache.http.wire -  &gt;&gt; &quot;      &quot;packets_quantity&quot;: 100,[\n]&quot;
+00:11:22.848 [main] DEBUG org.apache.http.wire -  &gt;&gt; &quot;      &quot;start_date&quot;: &quot;2017-05-08T07:10:45.059Z&quot;,[\n]&quot;
+00:11:22.848 [main] DEBUG org.apache.http.wire -  &gt;&gt; &quot;      &quot;cost_per_packet&quot;: 10[\n]&quot;
+00:11:22.848 [main] DEBUG org.apache.http.wire -  &gt;&gt; &quot;    },[\n]&quot;
+00:11:22.848 [main] DEBUG org.apache.http.wire -  &gt;&gt; &quot;    {[\n]&quot;
+00:11:22.848 [main] DEBUG org.apache.http.wire -  &gt;&gt; &quot;      &quot;type&quot;: &quot;moving&quot;,[\n]&quot;
+00:11:22.848 [main] DEBUG org.apache.http.wire -  &gt;&gt; &quot;      &quot;packets_quantity&quot;: 100,[\n]&quot;
+00:11:22.848 [main] DEBUG org.apache.http.wire -  &gt;&gt; &quot;      &quot;start_date&quot;: &quot;2017-05-08T07:10:45.059Z&quot;,[\n]&quot;
+00:11:22.849 [main] DEBUG org.apache.http.wire -  &gt;&gt; &quot;      &quot;cost_per_packet&quot;: 10[\n]&quot;
+00:11:22.849 [main] DEBUG org.apache.http.wire -  &gt;&gt; &quot;    },[\n]&quot;
+00:11:22.849 [main] DEBUG org.apache.http.wire -  &gt;&gt; &quot;    {[\n]&quot;
+00:11:22.849 [main] DEBUG org.apache.http.wire -  &gt;&gt; &quot;      &quot;type&quot;: &quot;cleaning&quot;,[\n]&quot;
+00:11:22.849 [main] DEBUG org.apache.http.wire -  &gt;&gt; &quot;      &quot;cost&quot;: 100,[\n]&quot;
+00:11:22.849 [main] DEBUG org.apache.http.wire -  &gt;&gt; &quot;      &quot;packets_quantity&quot;: 100,[\n]&quot;
+00:11:22.849 [main] DEBUG org.apache.http.wire -  &gt;&gt; &quot;      &quot;start_date&quot;: &quot;2017-05-08T07:10:45.059Z&quot;,[\n]&quot;
+00:11:22.849 [main] DEBUG org.apache.http.wire -  &gt;&gt; &quot;      &quot;cost_per_packet&quot;: 10[\n]&quot;
+00:11:22.849 [main] DEBUG org.apache.http.wire -  &gt;&gt; &quot;    }[\n]&quot;
+00:11:22.849 [main] DEBUG org.apache.http.wire -  &gt;&gt; &quot;  ][\n]&quot;
+00:11:22.849 [main] DEBUG org.apache.http.wire -  &gt;&gt; &quot;}&quot;
+00:11:22.865 [qtp1132967838-19] DEBUG org.eclipse.jetty.server.HttpChannel - new HttpChannelOverHttp@334190e4{r=0,c=false,a=IDLE,uri=-} -&gt; SelectChannelEndPoint@4e556b12{/127.0.0.1:54522&lt;-&gt;8086,Open,in,out,-,-,31/30000,null}{io=0/0,kio=0,kro=0},null,HttpChannelState@108a8543{s=IDLE a=null i=true r=!P!U w=false}
+00:11:22.871 [qtp1132967838-19] DEBUG org.eclipse.jetty.server.HttpConnection - New HTTP Connection HttpConnection@61852ca3&lt;--null
+00:11:22.871 [qtp1132967838-19] DEBUG org.eclipse.jetty.io.AbstractConnection - onOpen HttpConnection@61852ca3&lt;--null
+00:11:22.871 [qtp1132967838-19] DEBUG org.eclipse.jetty.io.AbstractConnection - fillInterested HttpConnection@61852ca3&lt;--null
+00:11:22.872 [qtp1132967838-19] DEBUG org.eclipse.jetty.io.FillInterest - FillInterest@305e28d4{true,AC.ReadCB@61852ca3{HttpConnection@61852ca3&lt;--null}} register AC.ReadCB@61852ca3{HttpConnection@61852ca3&lt;--null}
+00:11:22.872 [qtp1132967838-19] DEBUG org.eclipse.jetty.io.FillInterest - FillInterest@305e28d4{true,AC.ReadCB@61852ca3{HttpConnection@61852ca3&lt;--null}} register AC.ReadCB@61852ca3{HttpConnection@61852ca3&lt;--null}
+00:11:22.872 [qtp1132967838-19] DEBUG org.eclipse.jetty.io.SelectChannelEndPoint - changeInterests p=false 0-&gt;1 for SelectChannelEndPoint@4e556b12{/127.0.0.1:54522&lt;-&gt;8086,Open,in,out,R,-,1/30000,HttpConnection}{io=0/1,kio=0,kro=0}
+00:11:22.873 [qtp1132967838-19] DEBUG org.eclipse.jetty.io.ManagedSelector - Queued change SelectChannelEndPoint@4e556b12{/127.0.0.1:54522&lt;-&gt;8086,Open,in,out,R,-,1/30000,HttpConnection}{io=0/1,kio=0,kro=0}:runUpdateKey on org.eclipse.jetty.io.ManagedSelector@3d829787 id=0 keys=1 selected=0
+00:11:22.873 [qtp1132967838-15] DEBUG org.eclipse.jetty.io.ManagedSelector - Selector loop woken up from select, 0/1 selected
+00:11:22.873 [qtp1132967838-19] DEBUG org.eclipse.jetty.io.ManagedSelector - Created SelectChannelEndPoint@4e556b12{/127.0.0.1:54522&lt;-&gt;8086,Open,in,out,R,-,2/30000,HttpConnection}{io=0/1,kio=0,kro=0}
+00:11:22.873 [qtp1132967838-19] DEBUG org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume - EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@7ae7d20e ran org.eclipse.jetty.io.ManagedSelector$CreateEndPoint@5532c656
+00:11:22.873 [qtp1132967838-19] DEBUG org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume - EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@7ae7d20e produce exit
+00:11:22.873 [qtp1132967838-19] DEBUG org.eclipse.jetty.util.thread.QueuedThreadPool - ran org.eclipse.jetty.io.ManagedSelector@3d829787 id=0 keys=1 selected=0
+00:11:22.873 [qtp1132967838-15] DEBUG org.eclipse.jetty.io.ManagedSelector - Running change SelectChannelEndPoint@4e556b12{/127.0.0.1:54522&lt;-&gt;8086,Open,in,out,R,-,2/30000,HttpConnection}{io=0/1,kio=0,kro=0}:runUpdateKey
+00:11:22.873 [qtp1132967838-15] DEBUG org.eclipse.jetty.io.SelectChannelEndPoint - Key interests updated 0 -&gt; 1 on SelectChannelEndPoint@4e556b12{/127.0.0.1:54522&lt;-&gt;8086,Open,in,out,R,-,2/30000,HttpConnection}{io=1/1,kio=1,kro=0}
+00:11:22.873 [qtp1132967838-15] DEBUG org.eclipse.jetty.io.ManagedSelector - Selector loop waiting on select
+00:11:22.873 [qtp1132967838-15] DEBUG org.eclipse.jetty.io.ManagedSelector - Selector loop woken up from select, 1/1 selected
+00:11:22.874 [qtp1132967838-15] DEBUG org.eclipse.jetty.io.SelectChannelEndPoint - onSelected 1-&gt;0 r=true w=false for SelectChannelEndPoint@4e556b12{/127.0.0.1:54522&lt;-&gt;8086,Open,in,out,R,-,2/30000,HttpConnection}{io=1/0,kio=1,kro=1}
+00:11:22.874 [qtp1132967838-15] DEBUG org.eclipse.jetty.io.SelectChannelEndPoint - task SelectChannelEndPoint@4e556b12{/127.0.0.1:54522&lt;-&gt;8086,Open,in,out,R,-,3/30000,HttpConnection}{io=1/0,kio=1,kro=1}:runFillable
+00:11:22.874 [qtp1132967838-15] DEBUG org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume - EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@7ae7d20e produced SelectChannelEndPoint@4e556b12{/127.0.0.1:54522&lt;-&gt;8086,Open,in,out,R,-,3/30000,HttpConnection}{io=1/0,kio=1,kro=1}:runFillable
+00:11:22.874 [qtp1132967838-15] DEBUG org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume - EPR Pend/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@7ae7d20e dispatch
+00:11:22.874 [qtp1132967838-15] DEBUG org.eclipse.jetty.util.thread.QueuedThreadPool - queue EPR Pend/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@7ae7d20e
+00:11:22.874 [qtp1132967838-20] DEBUG org.eclipse.jetty.util.thread.QueuedThreadPool - run EPR Pend/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@7ae7d20e
+00:11:22.874 [qtp1132967838-20] DEBUG org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume - EPR Pend/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@7ae7d20e run
+00:11:22.874 [qtp1132967838-20] DEBUG org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume - EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@7ae7d20e produce enter
+00:11:22.874 [qtp1132967838-15] DEBUG org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume - EPR Pend/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@7ae7d20e run SelectChannelEndPoint@4e556b12{/127.0.0.1:54522&lt;-&gt;8086,Open,in,out,R,-,3/30000,HttpConnection}{io=1/0,kio=1,kro=1}:runFillable
+00:11:22.874 [qtp1132967838-20] DEBUG org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume - EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@7ae7d20e producing
+00:11:22.874 [qtp1132967838-15] DEBUG org.eclipse.jetty.io.FillInterest - FillInterest@305e28d4{true,AC.ReadCB@61852ca3{HttpConnection@61852ca3&lt;--null}} fillable AC.ReadCB@61852ca3{HttpConnection@61852ca3&lt;--null}
+00:11:22.874 [qtp1132967838-20] DEBUG org.eclipse.jetty.io.SelectChannelEndPoint - Key interests updated 1 -&gt; 0 on SelectChannelEndPoint@4e556b12{/127.0.0.1:54522&lt;-&gt;8086,Open,in,out,R,-,3/30000,HttpConnection}{io=0/0,kio=0,kro=1}
+00:11:22.874 [qtp1132967838-20] DEBUG org.eclipse.jetty.io.ManagedSelector - Selector loop waiting on select
+00:11:22.875 [qtp1132967838-15] DEBUG org.eclipse.jetty.server.HttpConnection - HttpConnection@61852ca3&lt;--null onFillable enter HttpChannelState@108a8543{s=IDLE a=null i=true r=!P!U w=false}
+00:11:22.878 [qtp1132967838-15] DEBUG org.eclipse.jetty.io.ChannelEndPoint - filled 1084 SelectChannelEndPoint@4e556b12{/127.0.0.1:54522&lt;-&gt;8086,Open,in,out,-,-,6/30000,HttpConnection}{io=0/0,kio=0,kro=1}
+00:11:22.880 [qtp1132967838-15] DEBUG org.eclipse.jetty.server.HttpConnection - HttpConnection@61852ca3&lt;--HeapByteBuffer@50863e69[p=0,l=1084,c=8192,r=1084]={&lt;&lt;&lt;POST /movers-orde... 10\n    }\n  ]\n}&gt;&gt;&gt;\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00} filled 1084
+00:11:22.881 [qtp1132967838-15] DEBUG org.eclipse.jetty.server.HttpConnection - HttpConnection@61852ca3&lt;--HeapByteBuffer@50863e69[p=0,l=1084,c=8192,r=1084]={&lt;&lt;&lt;POST /movers-orde... 10\n    }\n  ]\n}&gt;&gt;&gt;\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00} parse HeapByteBuffer@50863e69[p=0,l=1084,c=8192,r=1084]={&lt;&lt;&lt;POST /movers-orde... 10\n    }\n  ]\n}&gt;&gt;&gt;\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00} {}
+00:11:22.881 [qtp1132967838-15] DEBUG org.eclipse.jetty.http.HttpParser - parseNext s=START HeapByteBuffer@50863e69[p=0,l=1084,c=8192,r=1084]={&lt;&lt;&lt;POST /movers-orde... 10\n    }\n  ]\n}&gt;&gt;&gt;\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00}
+00:11:22.881 [qtp1132967838-15] DEBUG org.eclipse.jetty.http.HttpParser - START --&gt; SPACE1
+00:11:22.882 [qtp1132967838-15] DEBUG org.eclipse.jetty.http.HttpParser - SPACE1 --&gt; URI
+00:11:22.882 [qtp1132967838-15] DEBUG org.eclipse.jetty.http.HttpParser - URI --&gt; SPACE2
+00:11:22.882 [qtp1132967838-15] DEBUG org.eclipse.jetty.http.HttpParser - SPACE2 --&gt; REQUEST_VERSION
+00:11:22.882 [qtp1132967838-15] DEBUG org.eclipse.jetty.http.HttpParser - REQUEST_VERSION --&gt; HEADER
+00:11:22.883 [qtp1132967838-15] DEBUG org.eclipse.jetty.http.HttpParser - HEADER --&gt; HEADER_IN_VALUE
+00:11:22.883 [qtp1132967838-15] DEBUG org.eclipse.jetty.http.HttpParser - HEADER_IN_VALUE --&gt; HEADER
+00:11:22.883 [qtp1132967838-15] DEBUG org.eclipse.jetty.http.HttpParser - HEADER --&gt; HEADER_IN_VALUE
+00:11:22.883 [qtp1132967838-15] DEBUG org.eclipse.jetty.http.HttpParser - HEADER_IN_VALUE --&gt; HEADER
+00:11:22.883 [qtp1132967838-15] DEBUG org.eclipse.jetty.http.HttpParser - HEADER --&gt; HEADER_VALUE
+00:11:22.883 [qtp1132967838-15] DEBUG org.eclipse.jetty.http.HttpParser - HEADER_VALUE --&gt; HEADER_IN_VALUE
+00:11:22.883 [qtp1132967838-15] DEBUG org.eclipse.jetty.http.HttpParser - HEADER_IN_VALUE --&gt; HEADER
+00:11:22.883 [qtp1132967838-15] DEBUG org.eclipse.jetty.http.HttpParser - HEADER --&gt; HEADER_VALUE
+00:11:22.883 [qtp1132967838-15] DEBUG org.eclipse.jetty.http.HttpParser - HEADER_VALUE --&gt; HEADER_IN_VALUE
+00:11:22.883 [qtp1132967838-15] DEBUG org.eclipse.jetty.http.HttpParser - HEADER_IN_VALUE --&gt; HEADER
+00:11:22.883 [qtp1132967838-15] DEBUG org.eclipse.jetty.http.HttpParser - HEADER --&gt; HEADER_IN_VALUE
+00:11:22.883 [qtp1132967838-15] DEBUG org.eclipse.jetty.http.HttpParser - HEADER_IN_VALUE --&gt; HEADER
+00:11:22.883 [qtp1132967838-15] DEBUG org.eclipse.jetty.http.HttpParser - HEADER --&gt; HEADER_VALUE
+00:11:22.883 [qtp1132967838-15] DEBUG org.eclipse.jetty.http.HttpParser - HEADER_VALUE --&gt; HEADER_IN_VALUE
+00:11:22.883 [qtp1132967838-15] DEBUG org.eclipse.jetty.http.HttpParser - HEADER_IN_VALUE --&gt; HEADER
+00:11:22.883 [qtp1132967838-15] DEBUG org.eclipse.jetty.http.HttpParser - HEADER --&gt; HEADER_IN_VALUE
+00:11:22.883 [qtp1132967838-15] DEBUG org.eclipse.jetty.http.HttpParser - HEADER_IN_VALUE --&gt; HEADER
+00:11:22.883 [qtp1132967838-15] DEBUG org.eclipse.jetty.http.HttpParser - HEADER --&gt; CONTENT
+00:11:22.884 [qtp1132967838-15] DEBUG org.eclipse.jetty.server.HttpConnection - HttpConnection@61852ca3&lt;--HeapByteBuffer@50863e69[p=262,l=1084,c=8192,r=822]={POST /movers-orde...zip,deflate\r\n\r\n&lt;&lt;&lt;{\n  &quot;name&quot;: &quot;John... 10\n    }\n  ]\n}&gt;&gt;&gt;\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00} parsed true HttpParser{s=CONTENT,0 of 822}
+00:11:22.885 [qtp1132967838-15] DEBUG org.eclipse.jetty.server.HttpChannel - HttpChannelOverHttp@334190e4{r=1,c=false,a=IDLE,uri=-} handle //localhost:8086/movers-order-module/createOrder/ 
+00:11:22.885 [qtp1132967838-15] DEBUG org.eclipse.jetty.server.HttpChannelState - HttpChannelState@108a8543{s=IDLE a=null i=true r=!P!U w=false} handling IDLE
+00:11:22.886 [qtp1132967838-15] DEBUG org.eclipse.jetty.server.HttpChannel - HttpChannelOverHttp@334190e4{r=1,c=false,a=DISPATCHED,uri=/movers-order-module/createOrder/} action REQUEST_DISPATCH
+00:11:22.886 [qtp1132967838-15] DEBUG org.eclipse.jetty.server.Server - REQUEST on HttpChannelOverHttp@334190e4{r=1,c=false,a=DISPATCHED,uri=/movers-order-module/createOrder/}
+POST //localhost:8086/movers-order-module/createOrder/
+Accept: */*
+Content-Type: application/json; charset=ISO-8859-1
+Content-Length: 822
+Host: localhost:8086
+Connection: keep-alive
+User-Agent: Apache-HttpClient/4.3.6 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+
+00:11:22.886 [qtp1132967838-15] DEBUG org.eclipse.jetty.server.handler.ContextHandler - scope null||/movers-order-module/createOrder/ @ o.e.j.s.ServletContextHandler@124c278f{/movers-order-module,null,AVAILABLE}
+00:11:22.887 [qtp1132967838-15] DEBUG org.eclipse.jetty.server.handler.ContextHandler - context=/movers-order-module||/createOrder/ @ o.e.j.s.ServletContextHandler@124c278f{/movers-order-module,null,AVAILABLE}
+00:11:22.887 [qtp1132967838-15] DEBUG org.eclipse.jetty.servlet.ServletHandler - servlet /movers-order-module||/createOrder/ -&gt; org.glassfish.jersey.servlet.ServletContainer-12468a38@6bdb92bf==org.glassfish.jersey.servlet.ServletContainer,-1,true
+00:11:22.887 [qtp1132967838-15] DEBUG org.eclipse.jetty.servlet.ServletHandler - chain=null
+00:11:22.971 [qtp1132967838-15] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean &apos;orderService&apos;
+00:11:22.977 [qtp1132967838-15] DEBUG org.eclipse.jetty.server.HttpConnection - HttpConnection@61852ca3&lt;--HeapByteBuffer@50863e69[p=262,l=1084,c=8192,r=822]={POST /movers-orde...zip,deflate\r\n\r\n&lt;&lt;&lt;{\n  &quot;name&quot;: &quot;John... 10\n    }\n  ]\n}&gt;&gt;&gt;\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00} parseContent
+00:11:22.977 [qtp1132967838-15] DEBUG org.eclipse.jetty.server.HttpConnection - HttpConnection@61852ca3&lt;--HeapByteBuffer@50863e69[p=262,l=1084,c=8192,r=822]={POST /movers-orde...zip,deflate\r\n\r\n&lt;&lt;&lt;{\n  &quot;name&quot;: &quot;John... 10\n    }\n  ]\n}&gt;&gt;&gt;\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00} parse HeapByteBuffer@50863e69[p=262,l=1084,c=8192,r=822]={POST /movers-orde...zip,deflate\r\n\r\n&lt;&lt;&lt;{\n  &quot;name&quot;: &quot;John... 10\n    }\n  ]\n}&gt;&gt;&gt;\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00} {}
+00:11:22.977 [qtp1132967838-15] DEBUG org.eclipse.jetty.http.HttpParser - parseNext s=CONTENT HeapByteBuffer@50863e69[p=262,l=1084,c=8192,r=822]={POST /movers-orde...zip,deflate\r\n\r\n&lt;&lt;&lt;{\n  &quot;name&quot;: &quot;John... 10\n    }\n  ]\n}&gt;&gt;&gt;\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00}
+00:11:22.978 [qtp1132967838-15] DEBUG org.eclipse.jetty.server.HttpChannel - HttpChannelOverHttp@334190e4{r=1,c=false,a=DISPATCHED,uri=/movers-order-module/createOrder/} content Content@10b3bf34{HeapByteBufferR@1de983cc[p=262,l=1084,c=8192,r=822]={POST /movers-orde...zip,deflate\r\n\r\n&lt;&lt;&lt;{\n  &quot;name&quot;: &quot;John... 10\n    }\n  ]\n}&gt;&gt;&gt;\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00}}
+00:11:22.978 [qtp1132967838-15] DEBUG org.eclipse.jetty.server.HttpInput - org.eclipse.jetty.server.HttpInputOverHTTP@70d15f39 addContent Content@10b3bf34{HeapByteBufferR@1de983cc[p=262,l=1084,c=8192,r=822]={POST /movers-orde...zip,deflate\r\n\r\n&lt;&lt;&lt;{\n  &quot;name&quot;: &quot;John... 10\n    }\n  ]\n}&gt;&gt;&gt;\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00}}
+00:11:22.978 [qtp1132967838-15] DEBUG org.eclipse.jetty.http.HttpParser - CONTENT --&gt; END
+00:11:22.978 [qtp1132967838-15] DEBUG org.eclipse.jetty.server.HttpChannel - HttpChannelOverHttp@334190e4{r=1,c=false,a=DISPATCHED,uri=/movers-order-module/createOrder/} onRequestComplete
+00:11:22.978 [qtp1132967838-15] DEBUG org.eclipse.jetty.server.HttpInput - org.eclipse.jetty.server.HttpInputOverHTTP@70d15f39 addContent EOF
+00:11:22.978 [qtp1132967838-15] DEBUG org.eclipse.jetty.server.HttpConnection - HttpConnection@61852ca3&lt;--HeapByteBuffer@50863e69[p=1084,l=1084,c=8192,r=0]={POST /movers-orde... 10\n    }\n  ]\n}&lt;&lt;&lt;&gt;&gt;&gt;\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00} parsed false HttpParser{s=END,822 of 822}
+00:11:22.978 [qtp1132967838-15] DEBUG org.eclipse.jetty.server.HttpInput - org.eclipse.jetty.server.HttpInputOverHTTP@70d15f39 read 4096 from Content@10b3bf34{HeapByteBufferR@1de983cc[p=262,l=1084,c=8192,r=822]={POST /movers-orde...zip,deflate\r\n\r\n&lt;&lt;&lt;{\n  &quot;name&quot;: &quot;John... 10\n    }\n  ]\n}&gt;&gt;&gt;\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00}}
+00:11:22.978 [qtp1132967838-15] DEBUG org.eclipse.jetty.server.HttpConnection - releaseRequestBuffer HttpConnection@61852ca3&lt;--HeapByteBuffer@50863e69[p=1084,l=1084,c=8192,r=0]={POST /movers-orde... 10\n    }\n  ]\n}&lt;&lt;&lt;&gt;&gt;&gt;\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00}
+00:11:22.978 [qtp1132967838-15] DEBUG org.eclipse.jetty.server.HttpInput - org.eclipse.jetty.server.HttpInputOverHTTP@70d15f39 consumed Content@10b3bf34{HeapByteBufferR@1de983cc[p=1084,l=1084,c=8192,r=0]={POST /movers-orde... 10\n    }\n  ]\n}&lt;&lt;&lt;&gt;&gt;&gt;\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00}}
+00:11:22.979 [qtp1132967838-15] DEBUG org.eclipse.jetty.server.HttpInput - org.eclipse.jetty.server.HttpInputOverHTTP@70d15f39 consumed EOF
+00:11:23.115 [qtp1132967838-15] DEBUG org.springframework.jdbc.core.JdbcTemplate - Executing prepared SQL update
+00:11:23.115 [qtp1132967838-15] DEBUG org.springframework.jdbc.core.JdbcTemplate - Executing prepared SQL statement [INSERT INTO customer (customer_id, name, phone, email, created_at, updated_at, created_by, updated_by ) VALUES (?, ?, ?, ?, ?, ?, ?, ? )]
+00:11:23.115 [qtp1132967838-15] DEBUG org.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+00:11:23.115 [qtp1132967838-15] DEBUG org.springframework.jdbc.datasource.SingleConnectionDataSource - Creating new JDBC DriverManager Connection to [jdbc:mysql://db.local.gl:3306/movers_packers]
+00:11:23.121 [qtp1132967838-15] INFO org.springframework.jdbc.datasource.SingleConnectionDataSource - Established shared JDBC Connection: com.mysql.jdbc.JDBC4Connection@20cef851
+00:11:23.123 [qtp1132967838-15] DEBUG org.springframework.jdbc.core.JdbcTemplate - SQL update affected 1 rows
+00:11:23.123 [qtp1132967838-15] DEBUG org.springframework.jdbc.datasource.DataSourceUtils - Returning JDBC Connection to DataSource
+00:11:23.125 [qtp1132967838-15] DEBUG org.springframework.jdbc.core.JdbcTemplate - Executing prepared SQL update
+00:11:23.125 [qtp1132967838-15] DEBUG org.springframework.jdbc.core.JdbcTemplate - Executing prepared SQL statement [INSERT INTO order (order_id, customer_id, from_address, to_address, status, total_cost, created_at, updated_at, created_by, updated_by ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ? )]
+00:11:23.125 [qtp1132967838-15] DEBUG org.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+00:11:23.126 [qtp1132967838-15] DEBUG org.springframework.jdbc.datasource.DataSourceUtils - Returning JDBC Connection to DataSource
+00:11:23.132 [qtp1132967838-15] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
+00:11:23.132 [qtp1132967838-15] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
+00:11:23.132 [qtp1132967838-15] DEBUG org.springframework.core.env.StandardEnvironment - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+00:11:23.132 [qtp1132967838-15] INFO org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+00:11:23.133 [qtp1132967838-15] DEBUG org.springframework.beans.factory.xml.DefaultDocumentLoader - Using JAXP provider [com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl]
+00:11:23.137 [qtp1132967838-15] DEBUG org.springframework.beans.factory.xml.BeansDtdResolver - Found beans DTD [http://www.springframework.org/dtd/spring-beans-2.0.dtd] in classpath: spring-beans-2.0.dtd
+00:11:23.149 [qtp1132967838-15] DEBUG org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader - Loading bean definitions
+00:11:23.157 [qtp1132967838-15] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean &apos;DB2&apos;
+00:11:23.157 [qtp1132967838-15] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean &apos;DB2&apos;
+00:11:23.157 [qtp1132967838-15] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean &apos;DB2&apos; to allow for resolving potential circular references
+00:11:23.163 [qtp1132967838-15] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean &apos;DB2&apos;
+00:11:23.163 [qtp1132967838-15] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean &apos;Derby&apos;
+00:11:23.163 [qtp1132967838-15] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean &apos;Derby&apos;
+00:11:23.163 [qtp1132967838-15] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean &apos;Derby&apos; to allow for resolving potential circular references
+00:11:23.164 [qtp1132967838-15] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean &apos;Derby&apos;
+00:11:23.164 [qtp1132967838-15] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean &apos;H2&apos;
+00:11:23.164 [qtp1132967838-15] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean &apos;H2&apos;
+00:11:23.164 [qtp1132967838-15] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean &apos;H2&apos; to allow for resolving potential circular references
+00:11:23.164 [qtp1132967838-15] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean &apos;H2&apos;
+00:11:23.164 [qtp1132967838-15] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean &apos;HSQL&apos;
+00:11:23.164 [qtp1132967838-15] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean &apos;HSQL&apos;
+00:11:23.164 [qtp1132967838-15] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean &apos;HSQL&apos; to allow for resolving potential circular references
+00:11:23.165 [qtp1132967838-15] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean &apos;HSQL&apos;
+00:11:23.165 [qtp1132967838-15] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean &apos;Informix&apos;
+00:11:23.165 [qtp1132967838-15] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean &apos;Informix&apos;
+00:11:23.165 [qtp1132967838-15] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean &apos;Informix&apos; to allow for resolving potential circular references
+00:11:23.165 [qtp1132967838-15] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean &apos;Informix&apos;
+00:11:23.165 [qtp1132967838-15] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean &apos;MS-SQL&apos;
+00:11:23.165 [qtp1132967838-15] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean &apos;MS-SQL&apos;
+00:11:23.165 [qtp1132967838-15] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean &apos;MS-SQL&apos; to allow for resolving potential circular references
+00:11:23.166 [qtp1132967838-15] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean &apos;MS-SQL&apos;
+00:11:23.166 [qtp1132967838-15] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean &apos;MySQL&apos;
+00:11:23.166 [qtp1132967838-15] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean &apos;MySQL&apos;
+00:11:23.166 [qtp1132967838-15] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean &apos;MySQL&apos; to allow for resolving potential circular references
+00:11:23.166 [qtp1132967838-15] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean &apos;MySQL&apos;
+00:11:23.166 [qtp1132967838-15] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean &apos;Oracle&apos;
+00:11:23.166 [qtp1132967838-15] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean &apos;Oracle&apos;
+00:11:23.166 [qtp1132967838-15] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean &apos;Oracle&apos; to allow for resolving potential circular references
+00:11:23.167 [qtp1132967838-15] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean &apos;Oracle&apos;
+00:11:23.167 [qtp1132967838-15] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean &apos;PostgreSQL&apos;
+00:11:23.167 [qtp1132967838-15] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean &apos;PostgreSQL&apos;
+00:11:23.167 [qtp1132967838-15] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean &apos;PostgreSQL&apos; to allow for resolving potential circular references
+00:11:23.167 [qtp1132967838-15] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean &apos;PostgreSQL&apos;
+00:11:23.167 [qtp1132967838-15] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean &apos;Sybase&apos;
+00:11:23.167 [qtp1132967838-15] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean &apos;Sybase&apos;
+00:11:23.167 [qtp1132967838-15] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean &apos;Sybase&apos; to allow for resolving potential circular references
+00:11:23.168 [qtp1132967838-15] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean &apos;Sybase&apos;
+00:11:23.169 [qtp1132967838-15] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean &apos;Hana&apos;
+00:11:23.169 [qtp1132967838-15] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean &apos;Hana&apos;
+00:11:23.169 [qtp1132967838-15] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean &apos;Hana&apos; to allow for resolving potential circular references
+00:11:23.169 [qtp1132967838-15] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean &apos;Hana&apos;
+00:11:23.169 [qtp1132967838-15] INFO org.springframework.jdbc.support.SQLErrorCodesFactory - SQLErrorCodes loaded: [DB2, Derby, H2, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase, Hana]
+00:11:23.169 [qtp1132967838-15] DEBUG org.springframework.jdbc.support.SQLErrorCodesFactory - Looking up default SQLErrorCodes for DataSource [org.springframework.jdbc.datasource.SingleConnectionDataSource@6f719c94]
+00:11:23.170 [qtp1132967838-15] DEBUG org.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+00:11:23.170 [qtp1132967838-15] DEBUG org.springframework.jdbc.datasource.DataSourceUtils - Returning JDBC Connection to DataSource
+00:11:23.170 [qtp1132967838-15] DEBUG org.springframework.jdbc.support.SQLErrorCodesFactory - Database product name cached for DataSource [org.springframework.jdbc.datasource.SingleConnectionDataSource@6f719c94]: name is &apos;MySQL&apos;
+00:11:23.171 [qtp1132967838-15] DEBUG org.springframework.jdbc.support.SQLErrorCodesFactory - SQL error codes for &apos;MySQL&apos; found
+00:11:23.171 [qtp1132967838-15] DEBUG org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator - Translating SQLException with SQL state &apos;42000&apos;, error code &apos;1064&apos;, message [You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near &apos;order (order_id, customer_id, from_address, to_address, status, total_cost, crea&apos; at line 1]; SQL was [INSERT INTO order (order_id, customer_id, from_address, to_address, status, total_cost, created_at, updated_at, created_by, updated_by ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ? )] for task [PreparedStatementCallback]
+00:11:23.174 [qtp1132967838-15] DEBUG org.eclipse.jetty.server.HttpChannel - Commit HTTP/1.1{s=500,h=4} to HttpChannelOverHttp@334190e4{r=1,c=true,a=DISPATCHED,uri=/movers-order-module/createOrder/}
+00:11:23.176 [qtp1132967838-15] DEBUG org.eclipse.jetty.server.HttpConnection - org.eclipse.jetty.server.HttpConnection$SendCallback@73f62f59[PROCESSING][i=HTTP/1.1{s=500,h=4},cb=org.eclipse.jetty.server.HttpChannel$CommitCallback@4b6921e7] generate: NEED_HEADER (null,[p=0,l=354,c=2048,r=354],true)@START
+00:11:23.177 [qtp1132967838-15] DEBUG org.eclipse.jetty.server.HttpConnection - org.eclipse.jetty.server.HttpConnection$SendCallback@73f62f59[PROCESSING][i=HTTP/1.1{s=500,h=4},cb=org.eclipse.jetty.server.HttpChannel$CommitCallback@4b6921e7] generate: FLUSH ([p=0,l=216,c=8192,r=216],[p=0,l=354,c=2048,r=354],true)@COMPLETING
+00:11:23.177 [qtp1132967838-15] DEBUG org.eclipse.jetty.io.WriteFlusher - write: WriteFlusher@693a94fa{IDLE} [HeapByteBuffer@50863e69[p=0,l=216,c=8192,r=216]={&lt;&lt;&lt;HTTP/1.1 500 Requ....v20150730)\r\n\r\n&gt;&gt;&gt; (java 1.5)\r\nAcce...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00},HeapByteBuffer@207ae637[p=0,l=354,c=2048,r=354]={&lt;&lt;&lt;&lt;html&gt;\n&lt;head&gt;\n&lt;me.../body&gt;\n&lt;/html&gt;\n&gt;&gt;&gt;\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00}]
+00:11:23.177 [qtp1132967838-15] DEBUG org.eclipse.jetty.io.WriteFlusher - update WriteFlusher@693a94fa{WRITING}:IDLE--&gt;WRITING
+00:11:23.178 [main] DEBUG org.apache.http.wire -  &lt;&lt; &quot;HTTP/1.1 500 Request failed.[\r][\n]&quot;
+00:11:23.178 [qtp1132967838-15] DEBUG org.eclipse.jetty.io.ChannelEndPoint - flushed 570 SelectChannelEndPoint@4e556b12{/127.0.0.1:54522&lt;-&gt;8086,Open,in,out,-,W,300/30000,HttpConnection}{io=0/0,kio=0,kro=1}
+00:11:23.179 [qtp1132967838-15] DEBUG org.eclipse.jetty.io.WriteFlusher - Flushed=true 216/216+1 WriteFlusher@693a94fa{WRITING}
+00:11:23.179 [qtp1132967838-15] DEBUG org.eclipse.jetty.io.WriteFlusher - update WriteFlusher@693a94fa{IDLE}:WRITING--&gt;IDLE
+00:11:23.179 [qtp1132967838-15] DEBUG org.eclipse.jetty.server.HttpConnection - org.eclipse.jetty.server.HttpConnection$SendCallback@73f62f59[PROCESSING][i=HTTP/1.1{s=500,h=4},cb=org.eclipse.jetty.server.HttpChannel$CommitCallback@4b6921e7] generate: DONE ([p=216,l=216,c=8192,r=0],[p=354,l=354,c=2048,r=0],true)@END
+00:11:23.181 [main] DEBUG org.apache.http.wire -  &lt;&lt; &quot;Date: Thu, 25 May 2017 22:11:22 GMT[\r][\n]&quot;
+00:11:23.181 [main] DEBUG org.apache.http.wire -  &lt;&lt; &quot;Cache-Control: must-revalidate,no-cache,no-store[\r][\n]&quot;
+00:11:23.181 [main] DEBUG org.apache.http.wire -  &lt;&lt; &quot;Content-Type: text/html;charset=iso-8859-1[\r][\n]&quot;
+00:11:23.181 [main] DEBUG org.apache.http.wire -  &lt;&lt; &quot;Content-Length: 354[\r][\n]&quot;
+00:11:23.181 [main] DEBUG org.apache.http.wire -  &lt;&lt; &quot;Server: Jetty(9.3.2.v20150730)[\r][\n]&quot;
+00:11:23.181 [main] DEBUG org.apache.http.wire -  &lt;&lt; &quot;[\r][\n]&quot;
+00:11:23.182 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 500 Request failed.
+00:11:23.182 [main] DEBUG org.apache.http.headers - &lt;&lt; HTTP/1.1 500 Request failed.
+00:11:23.182 [main] DEBUG org.apache.http.headers - &lt;&lt; Date: Thu, 25 May 2017 22:11:22 GMT
+00:11:23.182 [main] DEBUG org.apache.http.headers - &lt;&lt; Cache-Control: must-revalidate,no-cache,no-store
+00:11:23.182 [main] DEBUG org.apache.http.headers - &lt;&lt; Content-Type: text/html;charset=iso-8859-1
+00:11:23.182 [main] DEBUG org.apache.http.headers - &lt;&lt; Content-Length: 354
+00:11:23.182 [main] DEBUG org.apache.http.headers - &lt;&lt; Server: Jetty(9.3.2.v20150730)
+00:11:23.183 [qtp1132967838-15] WARN org.eclipse.jetty.servlet.ServletHandler - 
+javax.servlet.ServletException: org.springframework.jdbc.BadSqlGrammarException: PreparedStatementCallback; bad SQL grammar [INSERT INTO order (order_id, customer_id, from_address, to_address, status, total_cost, created_at, updated_at, created_by, updated_by ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ? )]; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near &apos;order (order_id, customer_id, from_address, to_address, status, total_cost, crea&apos; at line 1
+	at org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:487)
+	at org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:425)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:383)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:336)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:223)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:816)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:583)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1114)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:511)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1048)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:119)
+	at org.eclipse.jetty.server.Server.handle(Server.java:517)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:302)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:242)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:245)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:75)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceAndRun(ExecuteProduceConsume.java:213)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:147)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:654)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:572)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.springframework.jdbc.BadSqlGrammarException: PreparedStatementCallback; bad SQL grammar [INSERT INTO order (order_id, customer_id, from_address, to_address, status, total_cost, created_at, updated_at, created_by, updated_by ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ? )]; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near &apos;order (order_id, customer_id, from_address, to_address, status, total_cost, crea&apos; at line 1
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:231)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:73)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:645)
+	at org.springframework.jdbc.core.JdbcTemplate.update(JdbcTemplate.java:866)
+	at org.springframework.jdbc.core.JdbcTemplate.update(JdbcTemplate.java:890)
+	at org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate.update(NamedParameterJdbcTemplate.java:287)
+	at org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate.update(NamedParameterJdbcTemplate.java:292)
+	at com.packers.movers.datalayer.entities.SQLClient.update(SQLClient.java:36)
+	at com.packers.movers.datalayer.entities.EntitySqlStore.persistOrder(EntitySqlStore.java:78)
+	at com.packers.movers.datalayer.entities.EntitySqlStore.persist(EntitySqlStore.java:32)
+	at com.packers.movers.service.OrderService.placeOrder(OrderService.java:52)
+	at com.packers.movers.service.resource.OrderResource.placeOrder(OrderResource.java:35)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory$1.invoke(ResourceMethodInvocationHandlerFactory.java:81)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:144)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:161)
+	at org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$ResponseOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:160)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:99)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:389)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:347)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:102)
+	at org.glassfish.jersey.server.ServerRuntime$2.run(ServerRuntime.java:317)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:271)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:267)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:315)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:297)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:267)
+	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:317)
+	at org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:298)
+	at org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:1154)
+	at org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:471)
+	... 22 common frames omitted
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near &apos;order (order_id, customer_id, from_address, to_address, status, total_cost, crea&apos; at line 1
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:406)
+	at com.mysql.jdbc.Util.getInstance(Util.java:381)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1030)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:956)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3491)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3423)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:1936)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2060)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2542)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1734)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2019)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1937)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1922)
+	at org.springframework.jdbc.core.JdbcTemplate$2.doInPreparedStatement(JdbcTemplate.java:873)
+	at org.springframework.jdbc.core.JdbcTemplate$2.doInPreparedStatement(JdbcTemplate.java:866)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:629)
+	... 53 common frames omitted
+00:11:23.184 [qtp1132967838-15] WARN org.eclipse.jetty.server.HttpChannel - //localhost:8086/movers-order-module/createOrder/
+javax.servlet.ServletException: org.springframework.jdbc.BadSqlGrammarException: PreparedStatementCallback; bad SQL grammar [INSERT INTO order (order_id, customer_id, from_address, to_address, status, total_cost, created_at, updated_at, created_by, updated_by ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ? )]; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near &apos;order (order_id, customer_id, from_address, to_address, status, total_cost, crea&apos; at line 1
+	at org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:487)
+	at org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:425)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:383)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:336)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:223)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:816)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:583)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1114)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:511)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1048)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:119)
+	at org.eclipse.jetty.server.Server.handle(Server.java:517)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:302)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:242)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:245)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:75)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceAndRun(ExecuteProduceConsume.java:213)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:147)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:654)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:572)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.springframework.jdbc.BadSqlGrammarException: PreparedStatementCallback; bad SQL grammar [INSERT INTO order (order_id, customer_id, from_address, to_address, status, total_cost, created_at, updated_at, created_by, updated_by ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ? )]; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near &apos;order (order_id, customer_id, from_address, to_address, status, total_cost, crea&apos; at line 1
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:231)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:73)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:645)
+	at org.springframework.jdbc.core.JdbcTemplate.update(JdbcTemplate.java:866)
+	at org.springframework.jdbc.core.JdbcTemplate.update(JdbcTemplate.java:890)
+	at org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate.update(NamedParameterJdbcTemplate.java:287)
+	at org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate.update(NamedParameterJdbcTemplate.java:292)
+	at com.packers.movers.datalayer.entities.SQLClient.update(SQLClient.java:36)
+	at com.packers.movers.datalayer.entities.EntitySqlStore.persistOrder(EntitySqlStore.java:78)
+	at com.packers.movers.datalayer.entities.EntitySqlStore.persist(EntitySqlStore.java:32)
+	at com.packers.movers.service.OrderService.placeOrder(OrderService.java:52)
+	at com.packers.movers.service.resource.OrderResource.placeOrder(OrderResource.java:35)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory$1.invoke(ResourceMethodInvocationHandlerFactory.java:81)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:144)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:161)
+	at org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$ResponseOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:160)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:99)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:389)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:347)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:102)
+	at org.glassfish.jersey.server.ServerRuntime$2.run(ServerRuntime.java:317)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:271)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:267)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:315)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:297)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:267)
+	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:317)
+	at org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:298)
+	at org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:1154)
+	at org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:471)
+	... 22 common frames omitted
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near &apos;order (order_id, customer_id, from_address, to_address, status, total_cost, crea&apos; at line 1
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:406)
+	at com.mysql.jdbc.Util.getInstance(Util.java:381)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1030)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:956)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3491)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3423)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:1936)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2060)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2542)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1734)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2019)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1937)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1922)
+	at org.springframework.jdbc.core.JdbcTemplate$2.doInPreparedStatement(JdbcTemplate.java:873)
+	at org.springframework.jdbc.core.JdbcTemplate$2.doInPreparedStatement(JdbcTemplate.java:866)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:629)
+	... 53 common frames omitted
+00:11:23.184 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient - Connection can be kept alive indefinitely
+00:11:23.185 [qtp1132967838-15] DEBUG org.eclipse.jetty.io.AbstractEndPoint - onClose SelectChannelEndPoint@4e556b12{/127.0.0.1:54522&lt;-&gt;8086,CLOSED,in,out,-,-,5/30000,HttpConnection}{io=0/0,kio=0,kro=1}
+00:11:23.185 [qtp1132967838-15] DEBUG org.eclipse.jetty.io.ChannelEndPoint - close SelectChannelEndPoint@4e556b12{/127.0.0.1:54522&lt;-&gt;8086,CLOSED,in,out,-,-,6/30000,HttpConnection}{io=0/0,kio=0,kro=1}
+00:11:23.186 [qtp1132967838-15] DEBUG org.eclipse.jetty.io.ManagedSelector - Queued change org.eclipse.jetty.io.ManagedSelector$2@32134d3 on org.eclipse.jetty.io.ManagedSelector@3d829787 id=0 keys=1 selected=0
+00:11:23.186 [qtp1132967838-15] WARN org.eclipse.jetty.server.HttpChannel - Could not send response error 500: javax.servlet.ServletException: org.springframework.jdbc.BadSqlGrammarException: PreparedStatementCallback; bad SQL grammar [INSERT INTO order (order_id, customer_id, from_address, to_address, status, total_cost, created_at, updated_at, created_by, updated_by ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ? )]; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near &apos;order (order_id, customer_id, from_address, to_address, status, total_cost, crea&apos; at line 1
+00:11:23.186 [qtp1132967838-15] DEBUG org.eclipse.jetty.server.HttpChannelState - HttpChannelState@108a8543{s=DISPATCHED a=null i=true r=!P!U w=false} unhandle DISPATCHED
+00:11:23.187 [qtp1132967838-20] DEBUG org.eclipse.jetty.io.ManagedSelector - Selector loop woken up from select, 0/0 selected
+00:11:23.187 [qtp1132967838-20] DEBUG org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume - EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@7ae7d20e produced org.eclipse.jetty.io.ManagedSelector$2@32134d3
+00:11:23.187 [qtp1132967838-20] DEBUG org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume - EPR Pend/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@7ae7d20e dispatch
+00:11:23.187 [qtp1132967838-20] DEBUG org.eclipse.jetty.util.thread.QueuedThreadPool - queue EPR Pend/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@7ae7d20e
+00:11:23.187 [qtp1132967838-20] DEBUG org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume - EPR Pend/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@7ae7d20e run org.eclipse.jetty.io.ManagedSelector$2@32134d3
+00:11:23.187 [qtp1132967838-17] DEBUG org.eclipse.jetty.util.thread.QueuedThreadPool - run EPR Pend/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@7ae7d20e
+00:11:23.187 [qtp1132967838-17] DEBUG org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume - EPR Pend/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@7ae7d20e run
+00:11:23.187 [qtp1132967838-20] DEBUG org.eclipse.jetty.io.ManagedSelector - Destroyed SelectChannelEndPoint@4e556b12{/127.0.0.1:54522&lt;-&gt;8086,CLOSED,ISHUT,OSHUT,-,-,8/30000,HttpConnection}{io=0/0,kio=-1,kro=-1}
+00:11:23.187 [qtp1132967838-17] DEBUG org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume - EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@7ae7d20e produce enter
+00:11:23.187 [qtp1132967838-17] DEBUG org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume - EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@7ae7d20e producing
+00:11:23.187 [qtp1132967838-20] DEBUG org.eclipse.jetty.io.AbstractConnection - onClose HttpConnection@61852ca3&lt;--null
+00:11:23.187 [qtp1132967838-17] DEBUG org.eclipse.jetty.io.ManagedSelector - Selector loop waiting on select
+00:11:23.188 [qtp1132967838-20] DEBUG org.eclipse.jetty.io.AbstractEndPoint - onClose SelectChannelEndPoint@4e556b12{/127.0.0.1:54522&lt;-&gt;8086,CLOSED,ISHUT,OSHUT,-,-,9/30000,HttpConnection}{io=0/0,kio=-1,kro=-1}
+00:11:23.188 [qtp1132967838-20] DEBUG org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume - EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@7ae7d20e ran org.eclipse.jetty.io.ManagedSelector$2@32134d3
+00:11:23.188 [qtp1132967838-20] DEBUG org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume - EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@7ae7d20e produce exit
+00:11:23.188 [qtp1132967838-20] DEBUG org.eclipse.jetty.util.thread.QueuedThreadPool - ran EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@7ae7d20e
+00:11:23.188 [qtp1132967838-15] DEBUG org.eclipse.jetty.http.HttpParser - close HttpParser{s=END,822 of 822}
+00:11:23.188 [qtp1132967838-15] DEBUG org.eclipse.jetty.http.HttpParser - END --&gt; CLOSE
+00:11:23.188 [qtp1132967838-15] DEBUG org.eclipse.jetty.server.HttpChannel - HttpChannelOverHttp@334190e4{r=1,c=false,a=IDLE,uri=-} handle exit, result COMPLETE
+00:11:23.188 [qtp1132967838-15] DEBUG org.eclipse.jetty.http.HttpParser - atEOF HttpParser{s=CLOSE,822 of 822}
+00:11:23.188 [qtp1132967838-15] DEBUG org.eclipse.jetty.server.HttpConnection - HttpConnection@61852ca3&lt;--null filled -1
+00:11:23.188 [qtp1132967838-15] DEBUG org.eclipse.jetty.server.HttpConnection - HttpConnection@61852ca3&lt;--null parse null {}
+00:11:23.188 [qtp1132967838-15] DEBUG org.eclipse.jetty.http.HttpParser - parseNext s=CLOSE HeapByteBuffer@12587159[p=0,l=0,c=0,r=0]={&lt;&lt;&lt;&gt;&gt;&gt;}
+00:11:23.189 [qtp1132967838-15] DEBUG org.eclipse.jetty.http.HttpParser - CLOSE --&gt; CLOSED
+00:11:23.189 [qtp1132967838-15] DEBUG org.eclipse.jetty.server.HttpConnection - HttpConnection@61852ca3&lt;--null parsed false HttpParser{s=CLOSED,822 of 822}
+00:11:23.189 [qtp1132967838-15] DEBUG org.eclipse.jetty.server.HttpConnection - HttpConnection@61852ca3&lt;--null onFillable exit HttpChannelState@108a8543{s=IDLE a=null i=true r=!P!U w=false}
+00:11:23.189 [qtp1132967838-15] DEBUG org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume - EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@7ae7d20e ran SelectChannelEndPoint@4e556b12{/127.0.0.1:54522&lt;-&gt;8086,CLOSED,ISHUT,OSHUT,-,-,10/30000,HttpConnection}{io=0/0,kio=-1,kro=-1}:runFillable
+00:11:23.189 [qtp1132967838-15] DEBUG org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume - EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@7ae7d20e produce exit
+00:11:23.189 [qtp1132967838-15] DEBUG org.eclipse.jetty.util.thread.QueuedThreadPool - ran EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@7ae7d20e
+00:11:23.208 [main] DEBUG com.jayway.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsing response as: text/html;charset=iso-8859-1
+00:11:23.208 [main] DEBUG com.jayway.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+00:11:23.225 [main] DEBUG org.apache.http.wire -  &lt;&lt; &quot;&lt;html&gt;[\n]&quot;
+00:11:23.225 [main] DEBUG org.apache.http.wire -  &lt;&lt; &quot;&lt;head&gt;[\n]&quot;
+00:11:23.225 [main] DEBUG org.apache.http.wire -  &lt;&lt; &quot;&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html;charset=ISO-8859-1&quot;/&gt;[\n]&quot;
+00:11:23.225 [main] DEBUG org.apache.http.wire -  &lt;&lt; &quot;&lt;title&gt;Error 500 &lt;/title&gt;[\n]&quot;
+00:11:23.225 [main] DEBUG org.apache.http.wire -  &lt;&lt; &quot;&lt;/head&gt;[\n]&quot;
+00:11:23.226 [main] DEBUG org.apache.http.wire -  &lt;&lt; &quot;&lt;body&gt;[\n]&quot;
+00:11:23.226 [main] DEBUG org.apache.http.wire -  &lt;&lt; &quot;&lt;h2&gt;HTTP ERROR: 500&lt;/h2&gt;[\n]&quot;
+00:11:23.226 [main] DEBUG org.apache.http.wire -  &lt;&lt; &quot;&lt;p&gt;Problem accessing /movers-order-module/createOrder/. Reason:[\n]&quot;
+00:11:23.226 [main] DEBUG org.apache.http.wire -  &lt;&lt; &quot;&lt;pre&gt;    Request failed.&lt;/pre&gt;&lt;/p&gt;[\n]&quot;
+00:11:23.226 [main] DEBUG org.apache.http.wire -  &lt;&lt; &quot;&lt;hr /&gt;&lt;a href=&quot;http://eclipse.org/jetty&quot;&gt;Powered by Jetty:// 9.3.2.v20150730&lt;/a&gt;&lt;hr/&gt;[\n]&quot;
+00:11:23.226 [main] DEBUG org.apache.http.wire -  &lt;&lt; &quot;&lt;/body&gt;[\n]&quot;
+00:11:23.226 [main] DEBUG org.apache.http.wire -  &lt;&lt; &quot;&lt;/html&gt;[\n]&quot;
+00:11:23.226 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@75d982d3
+00:11:23.226 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Connection can be kept alive indefinitely
+HTTP/1.1 500 Request failed.
+Date: Thu, 25 May 2017 22:11:22 GMT
+Cache-Control: must-revalidate,no-cache,no-store
+Content-Type: text/html;charset=iso-8859-1
+Content-Length: 354
+Server: Jetty(9.3.2.v20150730)
+
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html;charset=ISO-8859-1&quot;/&gt;
+    &lt;title&gt;Error 500 &lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h2&gt;HTTP ERROR: 500&lt;/h2&gt;
+    &lt;p&gt;Problem accessing /movers-order-module/createOrder/. Reason:
+&lt;/p&gt;
+    &lt;pre&gt;    Request failed.&lt;/pre&gt;
+    &lt;hr/&gt;
+    &lt;a shape=&quot;rect&quot; href=&quot;http://eclipse.org/jetty&quot;&gt;Powered by Jetty:// 9.3.2.v20150730&lt;/a&gt;
+    &lt;hr/&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</system-out>
+  </testcase>
+</testsuite>

@@ -1,0 +1,9 @@
+com/packers/movers/test/SystemTest.class
+com/packers/movers/test/TestServer.class
+com/packers/movers/test/utils/TestDatabaseUtils.class
+com/packers/movers/datalayer/entities/EntitySqlStoreTest.class
+com/packers/movers/test/UnitDatabaseTest.class
+com/packers/movers/test/utils/TestXmlUtils.class
+com/packers/movers/test/UnitTest.class
+com/packers/movers/service/resource/OrderResourceTest.class
+com/packers/movers/test/TestApplicationServer.class
